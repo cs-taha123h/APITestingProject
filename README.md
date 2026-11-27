@@ -17,6 +17,7 @@ The framework uses Java and cucumber to allow testing of the API endpoints.
 step 1:
 
 To setup the repository you must first clone the current repository using the command
+
 ``` git clone https://github.com/cs-taha123h/APITestingProject.git ```
 
 step 3:
@@ -42,5 +43,14 @@ you can run individual feature files such as the Auth.feature or you can run all
 2. avoid repeating code
 3. follow common java naming conventions
 4. avoid commits that include sensitive data like API keys
+5. any defects found must be reported as a GitHub issue and be given a unique identifier so they can be referred to and where possible should also refer back to the swagger UI.
+
+### Any defect reports must also include the following information:
+- Severity: discussing how severe the defect is whether it impacts functionality and how big of an impact this is and why
+- Overview: a small brief explanation of what the defect is.
+- Replication: A step by step guide that can be that lead to the discovery of the defect to allow other developers to recreate the defect when needed.
+- Actual result: Explanation of what the actual result is when the code is currently ran
+- Expected result: Explanation of what the result should be and this should also be backed up with either the swagger UI stating that it should return X value or something else showing the current result is NOT the expected result.
+- It should also have the status of the defect, whether the defect still exists or not.
 
 
