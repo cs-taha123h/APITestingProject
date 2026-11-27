@@ -10,5 +10,5 @@ Feature: PUT spartan API
     When the spartanID is 2
     And I have a valid spartan update request body
     And I submit my request as a put
-    Then my response should be status code 204
+    Then my response should be status code 200
     And the spartan details should be updated
