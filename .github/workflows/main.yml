@@ -71,10 +71,6 @@ jobs:
             target/cucumber-reports/
           if-no-files-found: ignore
 
-      - name: Show API Logs
-        if: failure()
-        run: docker logs spartan-api
-
       - name: Stop API
         if: always()
         run: docker stop spartan-api || true
