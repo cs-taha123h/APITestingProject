@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     name: build api and run the tests
@@ -29,12 +33,12 @@ jobs:
           cache: maven
 
       - name: Build docker image
-        run: | 
-          docker build -t spartan-api ./SpartanAPI
+        run: |
+          docker build -t spartan-api ./SpartanAPI/SpartaAcademyAPI
 
       - name: Start container
         run: |
-          docker run -d -p 8080:8080 -p 8081:8081 spartaacademyapi
+          docker run -d -p 8080:8080 -p 8081:8081 spartan-api
 
       - name: Wait for SpartanAPI
         run: |
