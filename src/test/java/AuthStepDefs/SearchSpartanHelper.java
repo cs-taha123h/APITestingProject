@@ -1,8 +1,9 @@
+package AuthStepDefs;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.junit.runner.Request;
 
 import java.io.IOException;
 
