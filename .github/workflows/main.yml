@@ -30,7 +30,7 @@ jobs:
 
       - name: Build docker image
         run: | 
-          docker run -t spartan-api ./SpartanAPI
+          docker build -t spartan-api ./SpartanAPI
 
       - name: Start container
         run: |
